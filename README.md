@@ -7,3 +7,5 @@ Repository for Agentic AI Final Project: Raclin Murphy Museum Guide.
 ### Jack Owens
 ### Passion Hood
 ### Luke Collins
+
+Potential Artworks: 

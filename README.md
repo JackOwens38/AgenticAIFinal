@@ -9,3 +9,4 @@ Repository for Agentic AI Final Project: Raclin Murphy Museum Guide.
 ### Luke Collins
 
 Potential Artworks: 
+# African Artwork (Target for Scraping Data)

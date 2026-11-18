@@ -1,0 +1,640 @@
+{
+  "museum": "Raclin Murphy Museum of Art, University of Notre Dame",
+  "address": "St. Andre Way (corner of Eddy Street and Angela Blvd), Notre Dame, IN 46556",
+  "map_source": "https://raclinmurphymuseum.nd.edu/assets/546020/fullsize/raclin_murphy_museum_plan_map.jpg",
+  "levels": [
+    {
+      "floor": "Level 1",
+      "order": 1,
+      "hub": "Grand Atrium",
+      "summary": "Entrance level: Grand Atrium, Welcome Desk, Ivan's Cafe, Book Shop, Learning Commons, Teaching Gallery, African Art, and European & American Art 1700-1900."
+    },
+    {
+      "floor": "Level 2",
+      "order": 2,
+      "hub": "balcony that overlooks the Grand Atrium",
+      "summary": "Balcony level: European Art Through 1700, the Mary Queen of Families Chapel, Indigenous Art of the Americas (North American, Mesoamerican, Central & South American), Art of the Spanish Americas, Temporary Exhibitions, and the Founders Room."
+    },
+    {
+      "floor": "Level 3",
+      "order": 3,
+      "hub": "central landing",
+      "summary": "Education level: Art Studio A and B and a flexible north space. No permanent collection galleries."
+    },
+    {
+      "floor": "the Lower Level",
+      "order": 0,
+      "hub": "central gallery concourse",
+      "summary": "Lower Level: International Modern and Contemporary Art, the Sculpture Court, and the Object Study Room."
+    }
+  ],
+  "vertical_circulation": {
+    "name": "Vertical circulation",
+    "elements": [
+      "Elevator",
+      "North Stairs",
+      "South Stairs"
+    ],
+    "note": "The elevator and the North and South stairs connect all four levels (Lower Level, Level 1, Level 2, Level 3). On Level 1 they open onto the Grand Atrium; on Level 2 onto the balcony."
+  },
+  "spaces": [
+    {
+      "id": "entrance",
+      "name": "Main Entrance",
+      "floor": "Level 1",
+      "pos": "south (center)",
+      "cat": "entrance",
+      "routable": true,
+      "aliases": [
+        "entrance",
+        "front door",
+        "way in",
+        "main entrance"
+      ],
+      "neighbors": [
+        "grand_atrium",
+        "african_art"
+      ],
+      "notes": "The visitor entrance is at the south-center of Level 1 and leads directly into the Grand Atrium and Welcome Desk."
+    },
+    {
+      "id": "grand_atrium",
+      "name": "Grand Atrium",
+      "floor": "Level 1",
+      "pos": "center",
+      "cat": "circulation",
+      "routable": false,
+      "aliases": [
+        "atrium",
+        "grand atrium",
+        "lobby",
+        "main hall"
+      ],
+      "neighbors": [
+        "welcome_desk",
+        "cafe_lobby",
+        "euram_1700_1900",
+        "african_art",
+        "learning_commons",
+        "restrooms_1",
+        "stairs_north",
+        "stairs_south",
+        "elevator",
+        "coat_room"
+      ],
+      "notes": "The Grand Atrium is the central hall of Level 1; the North and South stairs and the elevator open onto it. It is open above to the Level 2 balcony."
+    },
+    {
+      "id": "welcome_desk",
+      "name": "Welcome Desk",
+      "floor": "Level 1",
+      "pos": "center-south (in the Grand Atrium)",
+      "cat": "service",
+      "routable": true,
+      "aliases": [
+        "welcome desk",
+        "information desk",
+        "info desk",
+        "admissions"
+      ],
+      "neighbors": [
+        "grand_atrium",
+        "coat_room"
+      ],
+      "notes": "The Welcome Desk sits in the Grand Atrium just inside the entrance."
+    },
+    {
+      "id": "coat_room",
+      "name": "Coat Room",
+      "floor": "Level 1",
+      "pos": "center-south (east of the Welcome Desk)",
+      "cat": "service",
+      "routable": false,
+      "aliases": [
+        "coat room",
+        "coat check",
+        "cloakroom"
+      ],
+      "neighbors": [
+        "grand_atrium",
+        "welcome_desk"
+      ],
+      "notes": "The Coat Room is just east of the Welcome Desk."
+    },
+    {
+      "id": "ivans_cafe",
+      "name": "Ivan's Cafe",
+      "floor": "Level 1",
+      "pos": "northwest",
+      "cat": "amenity",
+      "routable": true,
+      "aliases": [
+        "ivan's cafe",
+        "ivans cafe",
+        "cafe",
+        "coffee",
+        "restaurant",
+        "food"
+      ],
+      "neighbors": [
+        "book_shop",
+        "cafe_lobby",
+        "grand_atrium"
+      ],
+      "notes": "Ivan's Cafe is in the northwest of Level 1, off the Cafe Lobby, next to the Book Shop."
+    },
+    {
+      "id": "book_shop",
+      "name": "Book Shop",
+      "floor": "Level 1",
+      "pos": "northwest",
+      "cat": "amenity",
+      "routable": true,
+      "aliases": [
+        "book shop",
+        "bookshop",
+        "gift shop",
+        "store",
+        "shop"
+      ],
+      "neighbors": [
+        "ivans_cafe",
+        "cafe_lobby"
+      ],
+      "notes": "The Book Shop is in the northwest of Level 1, beside Ivan's Cafe."
+    },
+    {
+      "id": "cafe_lobby",
+      "name": "Cafe Lobby",
+      "floor": "Level 1",
+      "pos": "north (center)",
+      "cat": "circulation",
+      "routable": false,
+      "aliases": [
+        "cafe lobby",
+        "café lobby"
+      ],
+      "neighbors": [
+        "ivans_cafe",
+        "book_shop",
+        "grand_atrium",
+        "euram_1700_1900"
+      ],
+      "notes": "The Cafe Lobby is at the north-center of Level 1, linking the cafe/book shop to the atrium."
+    },
+    {
+      "id": "euram_1700_1900",
+      "name": "European and American Art 1700-1900",
+      "floor": "Level 1",
+      "pos": "east (wrapping from northeast to southeast)",
+      "cat": "gallery",
+      "routable": true,
+      "aliases": [
+        "european and american art 1700-1900",
+        "european and american art",
+        "1700-1900",
+        "de mura",
+        "vigee",
+        "gerome",
+        "rodin",
+        "cassatt"
+      ],
+      "neighbors": [
+        "grand_atrium",
+        "cafe_lobby",
+        "restrooms_1",
+        "coat_room"
+      ],
+      "notes": "This gallery occupies the entire east side of Level 1, wrapping around the atrium from the northeast to the southeast."
+    },
+    {
+      "id": "restrooms_1",
+      "name": "Restrooms (Level 1)",
+      "floor": "Level 1",
+      "pos": "east (center, off the atrium)",
+      "cat": "amenity",
+      "routable": false,
+      "aliases": [
+        "restroom",
+        "restrooms",
+        "bathroom",
+        "toilet",
+        "family restroom",
+        "washroom"
+      ],
+      "neighbors": [
+        "grand_atrium",
+        "euram_1700_1900"
+      ],
+      "notes": "Level 1 restrooms, including a Family Restroom, are on the east side off the Grand Atrium."
+    },
+    {
+      "id": "learning_commons",
+      "name": "Learning Commons",
+      "floor": "Level 1",
+      "pos": "west",
+      "cat": "education",
+      "routable": false,
+      "aliases": [
+        "learning commons"
+      ],
+      "neighbors": [
+        "grand_atrium",
+        "teaching_gallery"
+      ],
+      "notes": "The Learning Commons is on the west side of Level 1."
+    },
+    {
+      "id": "teaching_gallery",
+      "name": "Teaching Gallery",
+      "floor": "Level 1",
+      "pos": "southwest (corner)",
+      "cat": "gallery",
+      "routable": true,
+      "aliases": [
+        "teaching gallery"
+      ],
+      "neighbors": [
+        "african_art",
+        "learning_commons"
+      ],
+      "notes": "The Teaching Gallery is in the southwest corner of Level 1, next to African Art."
+    },
+    {
+      "id": "african_art",
+      "name": "African Art",
+      "floor": "Level 1",
+      "pos": "south (center-west, between the Teaching Gallery and the atrium)",
+      "cat": "gallery",
+      "routable": true,
+      "aliases": [
+        "african art",
+        "egungun",
+        "earth kid",
+        "shonibare",
+        "yoruba",
+        "cleopatra"
+      ],
+      "neighbors": [
+        "teaching_gallery",
+        "grand_atrium",
+        "entrance"
+      ],
+      "notes": "African Art is on the south side of Level 1, between the Teaching Gallery (west) and the Grand Atrium."
+    },
+    {
+      "id": "balcony",
+      "name": "Balcony",
+      "floor": "Level 2",
+      "pos": "center",
+      "cat": "circulation",
+      "routable": false,
+      "aliases": [
+        "balcony",
+        "mezzanine"
+      ],
+      "neighbors": [
+        "temp_exhibitions",
+        "founders_room",
+        "indigenous_art",
+        "central_south_american",
+        "spanish_americas",
+        "european_through_1700",
+        "chapel",
+        "restrooms_2",
+        "stairs_north",
+        "stairs_south",
+        "elevator"
+      ],
+      "notes": "The Level 2 Balcony rings the open Grand Atrium; all Level 2 spaces open off it."
+    },
+    {
+      "id": "temp_exhibitions",
+      "name": "Temporary Exhibitions",
+      "floor": "Level 2",
+      "pos": "west and northwest",
+      "cat": "gallery",
+      "routable": true,
+      "aliases": [
+        "temporary exhibitions",
+        "temporary galleries",
+        "special exhibitions",
+        "current exhibition",
+        "changing exhibitions",
+        "mimmo paladino"
+      ],
+      "neighbors": [
+        "balcony",
+        "founders_room",
+        "european_through_1700"
+      ],
+      "notes": "The Temporary Exhibitions galleries occupy the west and northwest of Level 2. Rotating/current exhibitions are shown here."
+    },
+    {
+      "id": "founders_room",
+      "name": "Founders Room",
+      "floor": "Level 2",
+      "pos": "north (center)",
+      "cat": "event",
+      "routable": true,
+      "aliases": [
+        "founders room",
+        "founder's room",
+        "meeting room"
+      ],
+      "neighbors": [
+        "balcony",
+        "temp_exhibitions",
+        "indigenous_art"
+      ],
+      "notes": "The Founders Room (used for meetings) is at the north-center of Level 2, between Temporary Exhibitions and Indigenous Art."
+    },
+    {
+      "id": "indigenous_art",
+      "name": "Indigenous Art of the Americas",
+      "floor": "Level 2",
+      "pos": "northeast",
+      "cat": "gallery",
+      "routable": true,
+      "aliases": [
+        "indigenous art",
+        "indigenous art of the americas",
+        "north american",
+        "mesoamerican",
+        "maya",
+        "aztec",
+        "native american",
+        "pueblo"
+      ],
+      "neighbors": [
+        "balcony",
+        "founders_room",
+        "central_south_american"
+      ],
+      "notes": "Indigenous Art of the Americas is in the northeast of Level 2. Its North American sub-gallery is on the north side and its Mesoamerican sub-gallery toward the east; the Central and South American sub-gallery continues down the east side."
+    },
+    {
+      "id": "central_south_american",
+      "name": "Central and South American (Indigenous Art)",
+      "floor": "Level 2",
+      "pos": "east",
+      "cat": "gallery",
+      "routable": true,
+      "aliases": [
+        "central and south american",
+        "andean",
+        "moche",
+        "chimu",
+        "paracas",
+        "inca",
+        "peru"
+      ],
+      "neighbors": [
+        "balcony",
+        "indigenous_art",
+        "spanish_americas",
+        "restrooms_2"
+      ],
+      "notes": "The Central and South American sub-gallery of Indigenous Art runs down the east side of Level 2, between the Mesoamerican gallery and Art of the Spanish Americas."
+    },
+    {
+      "id": "spanish_americas",
+      "name": "Art of the Spanish Americas",
+      "floor": "Level 2",
+      "pos": "southeast (corner)",
+      "cat": "gallery",
+      "routable": true,
+      "aliases": [
+        "art of the spanish americas",
+        "spanish americas",
+        "spanish colonial",
+        "guadalupe",
+        "cuzco",
+        "viceregal"
+      ],
+      "neighbors": [
+        "balcony",
+        "central_south_american",
+        "european_through_1700"
+      ],
+      "notes": "Art of the Spanish Americas is in the southeast corner of Level 2, below the Central and South American gallery and next to the east wing of European Art Through 1700."
+    },
+    {
+      "id": "european_through_1700",
+      "name": "European Art Through 1700",
+      "floor": "Level 2",
+      "pos": "south (in two wings flanking the Chapel)",
+      "cat": "gallery",
+      "routable": true,
+      "aliases": [
+        "european art through 1700",
+        "before 1700",
+        "old masters",
+        "madonna",
+        "kress",
+        "memling",
+        "sacred art"
+      ],
+      "neighbors": [
+        "balcony",
+        "chapel",
+        "spanish_americas",
+        "temp_exhibitions"
+      ],
+      "notes": "European Art Through 1700 occupies the south side of Level 2 in two wings, a southwest wing and a southeast wing, that flank the Mary, Queen of Families Chapel."
+    },
+    {
+      "id": "chapel",
+      "name": "Mary, Queen of Families Chapel",
+      "floor": "Level 2",
+      "pos": "south (center, between the two European Art Through 1700 wings)",
+      "cat": "chapel",
+      "routable": true,
+      "aliases": [
+        "chapel",
+        "mary queen of families chapel",
+        "mary, queen of families",
+        "prayer",
+        "mass"
+      ],
+      "neighbors": [
+        "balcony",
+        "european_through_1700"
+      ],
+      "notes": "The Mary, Queen of Families Chapel is at the south-center of Level 2, centered between the two wings of European Art Through 1700, directly across the balcony from the Founders Room."
+    },
+    {
+      "id": "restrooms_2",
+      "name": "Restrooms (Level 2)",
+      "floor": "Level 2",
+      "pos": "east (center, off the balcony)",
+      "cat": "amenity",
+      "routable": false,
+      "aliases": [
+        "restroom",
+        "restrooms",
+        "bathroom",
+        "toilet",
+        "washroom"
+      ],
+      "neighbors": [
+        "balcony",
+        "central_south_american"
+      ],
+      "notes": "Level 2 restrooms are on the east side off the balcony."
+    },
+    {
+      "id": "art_studio_a",
+      "name": "Art Studio A",
+      "floor": "Level 3",
+      "pos": "south",
+      "cat": "education",
+      "routable": true,
+      "aliases": [
+        "art studio a",
+        "studio a",
+        "art studio",
+        "class"
+      ],
+      "neighbors": [
+        "art_studio_b",
+        "landing_3"
+      ],
+      "notes": "Art Studio A is on the south side of Level 3."
+    },
+    {
+      "id": "art_studio_b",
+      "name": "Art Studio B",
+      "floor": "Level 3",
+      "pos": "south (east of Studio A)",
+      "cat": "education",
+      "routable": true,
+      "aliases": [
+        "art studio b",
+        "studio b",
+        "art studio",
+        "class"
+      ],
+      "neighbors": [
+        "art_studio_a",
+        "landing_3"
+      ],
+      "notes": "Art Studio B is on the south side of Level 3, east of Art Studio A."
+    },
+    {
+      "id": "restrooms_3",
+      "name": "Restrooms (Level 3)",
+      "floor": "Level 3",
+      "pos": "east",
+      "cat": "amenity",
+      "routable": false,
+      "aliases": [
+        "restroom",
+        "restrooms",
+        "bathroom",
+        "toilet",
+        "washroom"
+      ],
+      "neighbors": [
+        "landing_3"
+      ],
+      "notes": "Level 3 restrooms are on the east side."
+    },
+    {
+      "id": "landing_3",
+      "name": "Level 3 Landing",
+      "floor": "Level 3",
+      "pos": "center",
+      "cat": "circulation",
+      "routable": false,
+      "aliases": [
+        "level 3 landing",
+        "third floor landing"
+      ],
+      "neighbors": [
+        "art_studio_a",
+        "art_studio_b",
+        "restrooms_3",
+        "stairs_north",
+        "stairs_south",
+        "elevator"
+      ],
+      "notes": "Level 3 is the education floor (art studios and a flexible north space); it has no permanent collection galleries."
+    },
+    {
+      "id": "sculpture_court",
+      "name": "Sculpture Court",
+      "floor": "the Lower Level",
+      "pos": "north",
+      "cat": "gallery",
+      "routable": true,
+      "aliases": [
+        "sculpture court",
+        "sculpture"
+      ],
+      "neighbors": [
+        "intl_modern_contemporary"
+      ],
+      "notes": "The Sculpture Court is at the north end of the Lower Level, adjoining the International Modern and Contemporary Art gallery."
+    },
+    {
+      "id": "intl_modern_contemporary",
+      "name": "International Modern and Contemporary Art",
+      "floor": "the Lower Level",
+      "pos": "center",
+      "cat": "gallery",
+      "routable": true,
+      "aliases": [
+        "international modern and contemporary art",
+        "modern and contemporary",
+        "modern art",
+        "contemporary art",
+        "zhang huan",
+        "vanessa german",
+        "nevelson"
+      ],
+      "neighbors": [
+        "sculpture_court",
+        "object_study_room",
+        "restrooms_ll"
+      ],
+      "notes": "The International Modern and Contemporary Art gallery is the central gallery of the Lower Level, with the Sculpture Court to its north and the Object Study Room to its south."
+    },
+    {
+      "id": "object_study_room",
+      "name": "Object Study Room",
+      "floor": "the Lower Level",
+      "pos": "south",
+      "cat": "study",
+      "routable": true,
+      "aliases": [
+        "object study room",
+        "study room",
+        "research"
+      ],
+      "neighbors": [
+        "intl_modern_contemporary"
+      ],
+      "notes": "The Object Study Room is at the south end of the Lower Level."
+    },
+    {
+      "id": "restrooms_ll",
+      "name": "Restrooms (Lower Level)",
+      "floor": "the Lower Level",
+      "pos": "center",
+      "cat": "amenity",
+      "routable": false,
+      "aliases": [
+        "restroom",
+        "restrooms",
+        "bathroom",
+        "toilet",
+        "washroom"
+      ],
+      "neighbors": [
+        "intl_modern_contemporary"
+      ],
+      "notes": "Lower Level restrooms are in the center, off the International Modern and Contemporary Art gallery."
+    }
+  ]
+}
